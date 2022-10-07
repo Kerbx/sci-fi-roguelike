@@ -1,0 +1,16 @@
+# hidden files.
+
+.*
+
+
+# tilesets.
+
+kret_game/sprites/characters/npc/npcx3.png
+kret_game/sprites/characters/player/playersbluex3.png
+kret_game/sprites/characters/player/playersredx3.png
+kret_game/sprites/characters/player/playersgreenx3.png
+kret_game/sprites/characters/player/playersgreyx3.png
+kret_game/sprites/ui/uix3.png
+
+
+
