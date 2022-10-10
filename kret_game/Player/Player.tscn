@@ -62,6 +62,8 @@ extents = Vector2( 12, 6.5 )
 
 [node name="Player" type="KinematicBody2D"]
 
+[node name="Camera2D" type="Camera2D" parent="."]
+
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
