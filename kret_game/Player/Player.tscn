@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://sprites/characters/player/playerRed/sprites/playerShoot/playerRed_shoot2.png" type="Texture" id=1]
 [ext_resource path="res://sprites/characters/player/playerRed/sprites/playerDeath/playerRed_death7.png" type="Texture" id=2]
@@ -57,9 +57,6 @@ animations = [ {
 "speed": 7.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 12, 6.5 )
-
 [node name="Player" type="KinematicBody2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -70,7 +67,6 @@ frames = SubResource( 1 )
 animation = "idle"
 playing = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 9 )
-scale = Vector2( 2, 2 )
-shape = SubResource( 2 )
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+build_mode = 1
+polygon = PoolVector2Array( -30, -18, 23, -18, 30, -18, 30, -12, 36, -12, 36, 0, 31, 0, 31, 6, 36, 6, 36, 36, 18, 36, 18, 41, 12, 41, 12, 48, -12, 48, -12, 42, -17, 42, -18, 36, -24, 36, -24, 30, -30, 30, -30, 23, -36, 23, -36, -12, -30, -12 )
