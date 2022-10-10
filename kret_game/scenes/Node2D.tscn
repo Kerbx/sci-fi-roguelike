@@ -1738,16 +1738,16 @@ tile_data = PoolIntArray( 65540, 0, 0, 65541, 2, 0, 65542, 5, 0, 65543, 3, 0, 65
 
 [node name="layer_walls" type="TileMap" parent="."]
 light_mask = 2
-z_index = -45
+z_index = 1
 tile_set = SubResource( 66 )
 cell_size = Vector2( 96, 96 )
 cell_y_sort = true
-collision_mask = 3
+collision_layer = 3
 format = 1
 tile_data = PoolIntArray( 4, 25, 0, 5, 21, 0, 6, 21, 0, 7, 21, 0, 8, 21, 0, 9, 11, 0, 65540, 0, 0, 65545, 65, 0, 131076, 0, 0, 131081, 65, 0, 196612, 34, 0, 196613, 35, 0, 196614, 58, 0, 196616, 51, 0, 196617, 48, 0, 262149, 65, 0, 262153, 65, 0, 327684, 19, 0, 327685, 70, 0, 327688, 51, 0, 327689, 48, 0, 393220, 0, 0, 393224, 18, 0, 393225, 65, 0, 458756, 4, 0, 458757, 9, 0, 458758, 9, 0, 458759, 9, 0, 458760, 9, 0, 458761, 17, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 214, 388 )
-z_index = -44
+collision_mask = 3
 script = ExtResource( 3 )
 speed = 299
