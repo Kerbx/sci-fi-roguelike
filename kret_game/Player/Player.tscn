@@ -60,6 +60,7 @@ animations = [ {
 [node name="Player" type="KinematicBody2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+current = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 2, 2 )
