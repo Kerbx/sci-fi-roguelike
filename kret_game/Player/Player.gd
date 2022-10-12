@@ -25,13 +25,11 @@ func getInput():
 	else:
 		velocity = Vector2.ZERO
 		animatedSprite.play("idle")
-		
+	
 	velocity = velocity.normalized() * speed
-
 
 func _physics_process(delta):
 	direction = (get_global_mouse_position() - global_position).normalized()
-	print_debug(direction)
 	if direction.x > 0 and animatedSprite.flip_h:
 		animatedSprite.flip_h = false
 	if direction.x < 0 and not animatedSprite.flip_h:
