@@ -4,14 +4,12 @@ extends KinematicBody2D
 export (int) var speed
 onready var animatedSprite = $AnimatedSprite
 var velocity = Vector2()
-
+var direction
 
 func _ready():
-	pass # Replace with function body.
-
+	pass
 
 func getInput():
-	animatedSprite.flip_h = false
 	if Input.is_action_pressed("playerMovementUp"):
 		velocity = Vector2.UP
 		animatedSprite.play("run")
@@ -21,7 +19,6 @@ func getInput():
 	elif Input.is_action_pressed("playerMovementLeft"):
 		velocity = Vector2.LEFT
 		animatedSprite.play("run")
-		animatedSprite.flip_h = true
 	elif Input.is_action_pressed("playerMovementRight"):
 		velocity = Vector2.RIGHT
 		animatedSprite.play("run")
@@ -33,12 +30,13 @@ func getInput():
 
 
 func _physics_process(delta):
+	direction = (get_global_mouse_position() - global_position).normalized()
+	print_debug(direction)
+	if direction.x > 0 and animatedSprite.flip_h:
+		animatedSprite.flip_h = false
+	if direction.x < 0 and not animatedSprite.flip_h:
+		animatedSprite.flip_h = true
+		
 	getInput()
 	velocity = move_and_slide(velocity)
 	
-	
-	
-	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

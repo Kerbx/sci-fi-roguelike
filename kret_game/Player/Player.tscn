@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://sprites/characters/player/playerRed/sprites/playerShoot/playerRed_shoot2.png" type="Texture" id=1]
 [ext_resource path="res://sprites/characters/player/playerRed/sprites/playerDeath/playerRed_death7.png" type="Texture" id=2]
@@ -23,7 +23,6 @@
 [ext_resource path="res://sprites/characters/player/playerRed/sprites/playerReload/playerRed_reload4.png" type="Texture" id=21]
 [ext_resource path="res://sprites/characters/player/playerRed/sprites/playerReload/playerRed_reload3.png" type="Texture" id=22]
 [ext_resource path="res://sprites/characters/player/playerRed/sprites/playerReload/playerRed_reload5.png" type="Texture" id=23]
-[ext_resource path="res://Weapons/TestWeapon.tscn" type="PackedScene" id=24]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -74,5 +73,3 @@ z_index = 3
 z_as_relative = false
 build_mode = 1
 polygon = PoolVector2Array( -30, -12, -30, -18, -24, -18, -24, -30, -18, -30, -18, -42, -12, -42, -12, -54, 24, -54, 24, -42, 30, -42, 30, -30, 24, -30, 24, -19, 30, -18, 30, -12, 36, -12, 36, 0, 31, 0, 31, 7, -36, 7, -36, -12 )
-
-[node name="AnimatedSprite2" parent="." instance=ExtResource( 24 )]
