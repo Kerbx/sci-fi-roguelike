@@ -1727,6 +1727,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 71/z_index = 0
 
 [node name="Node2D" type="Node2D"]
+position = Vector2( 0, 1461 )
 
 [node name="layer_floor" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
