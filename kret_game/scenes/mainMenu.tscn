@@ -17,6 +17,8 @@ margin_top = 140.0
 margin_right = 675.0
 margin_bottom = 251.0
 text = "New game"
+referencePath = "res://scenes/Node2D.tscn"
+startFocused = true
 
 [node name="optionsButton" parent="." instance=ExtResource( 2 )]
 margin_left = 257.0
