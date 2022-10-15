@@ -26,6 +26,7 @@ margin_top = 279.0
 margin_right = 676.0
 margin_bottom = 390.0
 text = "Options"
+referencePath = "res://scenes/options.tscn"
 
 [node name="exitButton" parent="." instance=ExtResource( 2 )]
 margin_left = 259.0

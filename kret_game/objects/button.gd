@@ -17,7 +17,10 @@ func _onButtonMouseEntered():
 
 
 func _onButtonPressed():
-	if(referencePath != ""):
-		get_tree().change_scene(referencePath)
+	if("Player" in self.name):
+		pass
 	else:
-		get_tree().quit()
+		if(referencePath != ""):
+			get_tree().change_scene(referencePath)
+		else:
+			get_tree().quit()
