@@ -3,6 +3,7 @@ extends Button
 export var referencePath = ""
 export(bool) var startFocused = false
 
+onready var settingsFile = "res://etc/settings.tres"
 
 func _ready():
 	if(startFocused):
@@ -18,7 +19,10 @@ func _onButtonMouseEntered():
 
 func _onButtonPressed():
 	if("Player" in self.name):
-		pass
+		var file = File.new()
+		file.open(settingsFile, File.WRITE)
+		var index = 1
+		file.store_line("playerColor = " + self.name + ".tscn")
 	else:
 		if(referencePath != ""):
 			get_tree().change_scene(referencePath)

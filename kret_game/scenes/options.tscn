@@ -17,3 +17,11 @@ margin_right = 628.0
 margin_bottom = 208.0
 text = "Choose the player's color"
 referencePath = "res://scenes/playerChoice.tscn"
+
+[node name="backButton" parent="." instance=ExtResource( 2 )]
+margin_left = 16.0
+margin_top = 19.0
+margin_right = 215.0
+margin_bottom = 75.0
+text = "BACK"
+referencePath = "res://scenes/mainMenu.tscn"

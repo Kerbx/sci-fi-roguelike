@@ -1,13 +1,16 @@
 extends KinematicBody2D
 
 
-export (int) var speed
+export (int) var speed = 500
+
 onready var animatedSprite = $AnimatedSprite
+
 var velocity = Vector2()
 var direction
 
 func _ready():
 	pass
+	
 
 func getInput():
 	if Input.is_action_pressed("playerMovementUp"):

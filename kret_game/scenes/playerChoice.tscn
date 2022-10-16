@@ -17,6 +17,7 @@ margin_right = 247.0
 margin_bottom = 258.0
 focus_neighbour_left = NodePath("../bluePlayer")
 focus_neighbour_right = NodePath("../greyPlayer")
+text = "RED"
 
 [node name="greyPlayer" parent="." instance=ExtResource( 2 )]
 margin_left = 315.0
@@ -25,6 +26,7 @@ margin_right = 421.0
 margin_bottom = 257.0
 focus_neighbour_left = NodePath("../redPlayer")
 focus_neighbour_right = NodePath("../greenPlayer")
+text = "GREY"
 
 [node name="greenPlayer" parent="." instance=ExtResource( 2 )]
 margin_left = 491.0
@@ -33,6 +35,7 @@ margin_right = 597.0
 margin_bottom = 258.0
 focus_neighbour_left = NodePath("../greyPlayer")
 focus_neighbour_right = NodePath("../bluePlayer")
+text = "GREEN"
 
 [node name="bluePlayer" parent="." instance=ExtResource( 2 )]
 margin_left = 673.0
@@ -41,3 +44,12 @@ margin_right = 779.0
 margin_bottom = 261.0
 focus_neighbour_left = NodePath("../greenPlayer")
 focus_neighbour_right = NodePath("../redPlayer")
+text = "BLUE"
+
+[node name="backButton" parent="." instance=ExtResource( 2 )]
+margin_left = 16.0
+margin_top = 19.0
+margin_right = 215.0
+margin_bottom = 75.0
+text = "BACK"
+referencePath = "res://scenes/options.tscn"
