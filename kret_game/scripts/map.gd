@@ -22,6 +22,12 @@ func getPlayerColor():
 func _ready():
 	var playerScene = load('res://Player/' + getPlayerColor())
 	var playerObj = playerScene.instance()
-	playerObj.position.x = 676
-	playerObj.position.y = 425
-	add_child(playerObj)
+	
+	var saving = File.new()
+	if not saving.file_exists("user://savegame.save"):
+		playerObj.position.x = 676
+		playerObj.position.y = 425
+		add_child(playerObj)
+	else:
+		var loading = load("res://scripts/loading.gd")
+		loading.load()

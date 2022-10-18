@@ -25,7 +25,7 @@
 [ext_resource path="res://sprites/characters/player/playerBlue/sprites/playerDeath/playerBlue_death3.png" type="Texture" id=23]
 [ext_resource path="res://sprites/characters/player/playerBlue/sprites/playerRun/playerBlue_run4.png" type="Texture" id=24]
 [ext_resource path="res://sprites/characters/player/playerBlue/sprites/playerShoot/playerBlue_shoot4.png" type="Texture" id=25]
-[ext_resource path="res://Player/Player.gd" type="Script" id=26]
+[ext_resource path="res://scripts/Player.gd" type="Script" id=26]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -60,7 +60,7 @@ animations = [ {
 "speed": 7.0
 } ]
 
-[node name="redPlayer" type="KinematicBody2D"]
+[node name="redPlayer" type="KinematicBody2D" groups=["Persist"]]
 script = ExtResource( 26 )
 
 [node name="Camera2D" type="Camera2D" parent="."]

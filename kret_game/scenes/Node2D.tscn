@@ -1,13 +1,13 @@
 [gd_scene load_steps=71 format=2]
 
-[ext_resource path="res://sprites/tilesets/tileset x3.png" type="Texture" id=1]
-[ext_resource path="res://scenes/map.gd" type="Script" id=2]
-[ext_resource path="res://test_npc/npc.tscn" type="PackedScene" id=4]
-[ext_resource path="res://test_npc/npc_test.gd" type="Script" id=5]
+[ext_resource path="res://scripts/map.gd" type="Script" id=1]
+[ext_resource path="res://scripts/npc_test.gd" type="Script" id=2]
+[ext_resource path="res://sprites/tilesets/tileset x3.png" type="Texture" id=3]
+[ext_resource path="res://objects/npc/test_npc/npc.tscn" type="PackedScene" id=4]
 
 [sub_resource type="TileSet" id=1]
 0/name = "tileset x3.png 0"
-0/texture = ExtResource( 1 )
+0/texture = ExtResource( 3 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 3072, 192, 96, 96 )
@@ -21,7 +21,7 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "tileset x3.png 1"
-1/texture = ExtResource( 1 )
+1/texture = ExtResource( 3 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 3072, 96, 96, 96 )
@@ -35,7 +35,7 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "tileset x3.png 2"
-2/texture = ExtResource( 1 )
+2/texture = ExtResource( 3 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 3168, 96, 96, 96 )
@@ -49,7 +49,7 @@
 2/shapes = [  ]
 2/z_index = 0
 3/name = "tileset x3.png 3"
-3/texture = ExtResource( 1 )
+3/texture = ExtResource( 3 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 3264, 96, 96, 96 )
@@ -63,7 +63,7 @@
 3/shapes = [  ]
 3/z_index = 0
 4/name = "tileset x3.png 4"
-4/texture = ExtResource( 1 )
+4/texture = ExtResource( 3 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 3360, 96, 96, 96 )
@@ -77,7 +77,7 @@
 4/shapes = [  ]
 4/z_index = 0
 5/name = "tileset x3.png 5"
-5/texture = ExtResource( 1 )
+5/texture = ExtResource( 3 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 3456, 96, 96, 96 )
@@ -91,7 +91,7 @@
 5/shapes = [  ]
 5/z_index = 0
 6/name = "tileset x3.png 6"
-6/texture = ExtResource( 1 )
+6/texture = ExtResource( 3 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 3264, 192, 96, 96 )
@@ -105,7 +105,7 @@
 6/shapes = [  ]
 6/z_index = 0
 7/name = "tileset x3.png 7"
-7/texture = ExtResource( 1 )
+7/texture = ExtResource( 3 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 3360, 192, 96, 96 )
@@ -119,7 +119,7 @@
 7/shapes = [  ]
 7/z_index = 0
 8/name = "tileset x3.png 8"
-8/texture = ExtResource( 1 )
+8/texture = ExtResource( 3 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 3456, 192, 96, 96 )
@@ -133,7 +133,7 @@
 8/shapes = [  ]
 8/z_index = 0
 9/name = "tileset x3.png 9"
-9/texture = ExtResource( 1 )
+9/texture = ExtResource( 3 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 3264, 288, 96, 96 )
@@ -147,7 +147,7 @@
 9/shapes = [  ]
 9/z_index = 0
 10/name = "tileset x3.png 10"
-10/texture = ExtResource( 1 )
+10/texture = ExtResource( 3 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 3360, 288, 96, 96 )
@@ -161,7 +161,7 @@
 10/shapes = [  ]
 10/z_index = 0
 11/name = "tileset x3.png 11"
-11/texture = ExtResource( 1 )
+11/texture = ExtResource( 3 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 3360, 384, 96, 96 )
@@ -175,7 +175,7 @@
 11/shapes = [  ]
 11/z_index = 0
 12/name = "tileset x3.png 12"
-12/texture = ExtResource( 1 )
+12/texture = ExtResource( 3 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 3456, 288, 96, 96 )
@@ -383,7 +383,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 
 [sub_resource type="TileSet" id=66]
 0/name = "tileset x3.png 0"
-0/texture = ExtResource( 1 )
+0/texture = ExtResource( 3 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 96, 768, 24, 96 )
@@ -404,7 +404,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 0/z_index = 2
 1/name = "tileset x3.png 1"
-1/texture = ExtResource( 1 )
+1/texture = ExtResource( 3 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 96, 864, 96, 96 )
@@ -425,7 +425,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 1/z_index = 0
 2/name = "tileset x3.png 2"
-2/texture = ExtResource( 1 )
+2/texture = ExtResource( 3 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 192, 864, 24, 96 )
@@ -446,7 +446,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 2/z_index = 1
 3/name = "tileset x3.png 3"
-3/texture = ExtResource( 1 )
+3/texture = ExtResource( 3 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 288, 864, 24, 96 )
@@ -467,7 +467,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 3/z_index = 0
 4/name = "tileset x3.png 4"
-4/texture = ExtResource( 1 )
+4/texture = ExtResource( 3 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 192, 960, 96, 96 )
@@ -488,7 +488,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 4/z_index = 2
 5/name = "tileset x3.png 5"
-5/texture = ExtResource( 1 )
+5/texture = ExtResource( 3 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 288, 960, 96, 96 )
@@ -509,7 +509,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 5/z_index = 2
 6/name = "tileset x3.png 6"
-6/texture = ExtResource( 1 )
+6/texture = ExtResource( 3 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 384, 864, 96, 96 )
@@ -530,7 +530,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 6/z_index = 0
 7/name = "tileset x3.png 7"
-7/texture = ExtResource( 1 )
+7/texture = ExtResource( 3 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 384, 768, 96, 96 )
@@ -551,7 +551,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 7/z_index = 0
 8/name = "tileset x3.png 8"
-8/texture = ExtResource( 1 )
+8/texture = ExtResource( 3 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 384, 960, 96, 96 )
@@ -572,7 +572,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 8/z_index = 2
 9/name = "tileset x3.png 9"
-9/texture = ExtResource( 1 )
+9/texture = ExtResource( 3 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 480, 960, 96, 96 )
@@ -593,7 +593,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 9/z_index = 2
 10/name = "tileset x3.png 10"
-10/texture = ExtResource( 1 )
+10/texture = ExtResource( 3 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 576, 864, 96, 96 )
@@ -614,7 +614,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 10/z_index = 0
 11/name = "tileset x3.png 11"
-11/texture = ExtResource( 1 )
+11/texture = ExtResource( 3 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 576, 768, 96, 96 )
@@ -635,7 +635,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 11/z_index = 0
 12/name = "tileset x3.png 12"
-12/texture = ExtResource( 1 )
+12/texture = ExtResource( 3 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 576, 960, 96, 96 )
@@ -656,7 +656,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 12/z_index = 2
 13/name = "tileset x3.png 13"
-13/texture = ExtResource( 1 )
+13/texture = ExtResource( 3 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 672, 960, 96, 96 )
@@ -677,7 +677,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 13/z_index = 2
 15/name = "tileset x3.png 15"
-15/texture = ExtResource( 1 )
+15/texture = ExtResource( 3 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
 15/region = Rect2( 768, 960, 96, 96 )
@@ -698,7 +698,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 15/z_index = 2
 17/name = "tileset x3.png 17"
-17/texture = ExtResource( 1 )
+17/texture = ExtResource( 3 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
 17/region = Rect2( 864, 864, 96, 96 )
@@ -719,7 +719,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 17/z_index = 0
 19/name = "tileset x3.png 19"
-19/texture = ExtResource( 1 )
+19/texture = ExtResource( 3 )
 19/tex_offset = Vector2( 0, 0 )
 19/modulate = Color( 1, 1, 1, 1 )
 19/region = Rect2( 96, 384, 24, 96 )
@@ -740,7 +740,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 19/z_index = 0
 20/name = "tileset x3.png 20"
-20/texture = ExtResource( 1 )
+20/texture = ExtResource( 3 )
 20/tex_offset = Vector2( 0, 0 )
 20/modulate = Color( 1, 1, 1, 1 )
 20/region = Rect2( 96, 672, 96, 96 )
@@ -761,7 +761,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 20/z_index = 0
 21/name = "tileset x3.png 21"
-21/texture = ExtResource( 1 )
+21/texture = ExtResource( 3 )
 21/tex_offset = Vector2( 0, 0 )
 21/modulate = Color( 1, 1, 1, 1 )
 21/region = Rect2( 0, 672, 96, 96 )
@@ -782,7 +782,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 21/z_index = 0
 22/name = "tileset x3.png 22"
-22/texture = ExtResource( 1 )
+22/texture = ExtResource( 3 )
 22/tex_offset = Vector2( 0, 0 )
 22/modulate = Color( 1, 1, 1, 1 )
 22/region = Rect2( 96, 576, 96, 96 )
@@ -803,7 +803,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 22/z_index = 0
 23/name = "tileset x3.png 23"
-23/texture = ExtResource( 1 )
+23/texture = ExtResource( 3 )
 23/tex_offset = Vector2( 0, 0 )
 23/modulate = Color( 1, 1, 1, 1 )
 23/region = Rect2( 96, 480, 96, 96 )
@@ -824,7 +824,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 23/z_index = 0
 24/name = "tileset x3.png 24"
-24/texture = ExtResource( 1 )
+24/texture = ExtResource( 3 )
 24/tex_offset = Vector2( 0, 0 )
 24/modulate = Color( 1, 1, 1, 1 )
 24/region = Rect2( 0, 480, 96, 96 )
@@ -845,7 +845,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 24/z_index = 0
 25/name = "tileset x3.png 25"
-25/texture = ExtResource( 1 )
+25/texture = ExtResource( 3 )
 25/tex_offset = Vector2( 0, 0 )
 25/modulate = Color( 1, 1, 1, 1 )
 25/region = Rect2( 192, 0, 96, 96 )
@@ -866,7 +866,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 25/z_index = 0
 26/name = "tileset x3.png 26"
-26/texture = ExtResource( 1 )
+26/texture = ExtResource( 3 )
 26/tex_offset = Vector2( 0, 0 )
 26/modulate = Color( 1, 1, 1, 1 )
 26/region = Rect2( 120, 96, 96, 96 )
@@ -887,7 +887,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 26/z_index = 0
 27/name = "tileset x3.png 27"
-27/texture = ExtResource( 1 )
+27/texture = ExtResource( 3 )
 27/tex_offset = Vector2( 0, 0 )
 27/modulate = Color( 1, 1, 1, 1 )
 27/region = Rect2( 96, 96, 24, 96 )
@@ -908,7 +908,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 27/z_index = 0
 28/name = "tileset x3.png 28"
-28/texture = ExtResource( 1 )
+28/texture = ExtResource( 3 )
 28/tex_offset = Vector2( 0, 0 )
 28/modulate = Color( 1, 1, 1, 1 )
 28/region = Rect2( 96, 192, 24, 192 )
@@ -929,7 +929,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 28/z_index = 0
 29/name = "tileset x3.png 29"
-29/texture = ExtResource( 1 )
+29/texture = ExtResource( 3 )
 29/tex_offset = Vector2( 0, 0 )
 29/modulate = Color( 1, 1, 1, 1 )
 29/region = Rect2( 288, 0, 96, 96 )
@@ -950,7 +950,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 29/z_index = 0
 30/name = "tileset x3.png 30"
-30/texture = ExtResource( 1 )
+30/texture = ExtResource( 3 )
 30/tex_offset = Vector2( 0, 0 )
 30/modulate = Color( 1, 1, 1, 1 )
 30/region = Rect2( 288, 96, 24, 96 )
@@ -971,7 +971,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 30/z_index = 0
 31/name = "tileset x3.png 31"
-31/texture = ExtResource( 1 )
+31/texture = ExtResource( 3 )
 31/tex_offset = Vector2( 0, 0 )
 31/modulate = Color( 1, 1, 1, 1 )
 31/region = Rect2( 384, 0, 96, 96 )
@@ -992,7 +992,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 31/z_index = 0
 32/name = "tileset x3.png 32"
-32/texture = ExtResource( 1 )
+32/texture = ExtResource( 3 )
 32/tex_offset = Vector2( 0, 0 )
 32/modulate = Color( 1, 1, 1, 1 )
 32/region = Rect2( 480, 0, 96, 96 )
@@ -1013,7 +1013,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 32/z_index = 0
 33/name = "tileset x3.png 33"
-33/texture = ExtResource( 1 )
+33/texture = ExtResource( 3 )
 33/tex_offset = Vector2( 0, 0 )
 33/modulate = Color( 1, 1, 1, 1 )
 33/region = Rect2( 384, 96, 96, 96 )
@@ -1034,7 +1034,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 33/z_index = 0
 34/name = "tileset x3.png 34"
-34/texture = ExtResource( 1 )
+34/texture = ExtResource( 3 )
 34/tex_offset = Vector2( 0, 0 )
 34/modulate = Color( 1, 1, 1, 1 )
 34/region = Rect2( 384, 192, 96, 96 )
@@ -1055,7 +1055,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 34/z_index = 0
 35/name = "tileset x3.png 35"
-35/texture = ExtResource( 1 )
+35/texture = ExtResource( 3 )
 35/tex_offset = Vector2( 0, 0 )
 35/modulate = Color( 1, 1, 1, 1 )
 35/region = Rect2( 576, 0, 96, 96 )
@@ -1076,7 +1076,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 35/z_index = 0
 36/name = "tileset x3.png 36"
-36/texture = ExtResource( 1 )
+36/texture = ExtResource( 3 )
 36/tex_offset = Vector2( 0, 0 )
 36/modulate = Color( 1, 1, 1, 1 )
 36/region = Rect2( 576, 96, 96, 96 )
@@ -1097,7 +1097,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 36/z_index = 0
 37/name = "tileset x3.png 37"
-37/texture = ExtResource( 1 )
+37/texture = ExtResource( 3 )
 37/tex_offset = Vector2( 0, 0 )
 37/modulate = Color( 1, 1, 1, 1 )
 37/region = Rect2( 576, 192, 96, 96 )
@@ -1118,7 +1118,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 37/z_index = 0
 38/name = "tileset x3.png 38"
-38/texture = ExtResource( 1 )
+38/texture = ExtResource( 3 )
 38/tex_offset = Vector2( 0, 0 )
 38/modulate = Color( 1, 1, 1, 1 )
 38/region = Rect2( 672, 0, 96, 96 )
@@ -1139,7 +1139,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 38/z_index = 0
 39/name = "tileset x3.png 39"
-39/texture = ExtResource( 1 )
+39/texture = ExtResource( 3 )
 39/tex_offset = Vector2( 0, 0 )
 39/modulate = Color( 1, 1, 1, 1 )
 39/region = Rect2( 768, 0, 96, 96 )
@@ -1160,7 +1160,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 39/z_index = 0
 42/name = "tileset x3.png 42"
-42/texture = ExtResource( 1 )
+42/texture = ExtResource( 3 )
 42/tex_offset = Vector2( 0, 0 )
 42/modulate = Color( 1, 1, 1, 1 )
 42/region = Rect2( 864, 96, 96, 96 )
@@ -1181,7 +1181,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 42/z_index = 0
 46/name = "tileset x3.png 46"
-46/texture = ExtResource( 1 )
+46/texture = ExtResource( 3 )
 46/tex_offset = Vector2( 0, 0 )
 46/modulate = Color( 1, 1, 1, 1 )
 46/region = Rect2( 864, 672, 96, 96 )
@@ -1202,7 +1202,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 46/z_index = 0
 47/name = "tileset x3.png 47"
-47/texture = ExtResource( 1 )
+47/texture = ExtResource( 3 )
 47/tex_offset = Vector2( 0, 0 )
 47/modulate = Color( 1, 1, 1, 1 )
 47/region = Rect2( 960, 672, 96, 96 )
@@ -1223,7 +1223,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 47/z_index = 0
 48/name = "tileset x3.png 48"
-48/texture = ExtResource( 1 )
+48/texture = ExtResource( 3 )
 48/tex_offset = Vector2( 0, 0 )
 48/modulate = Color( 1, 1, 1, 1 )
 48/region = Rect2( 864, 576, 96, 96 )
@@ -1244,7 +1244,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 48/z_index = 0
 49/name = "tileset x3.png 49"
-49/texture = ExtResource( 1 )
+49/texture = ExtResource( 3 )
 49/tex_offset = Vector2( 0, 0 )
 49/modulate = Color( 1, 1, 1, 1 )
 49/region = Rect2( 864, 480, 96, 96 )
@@ -1265,7 +1265,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 49/z_index = 0
 50/name = "tileset x3.png 50"
-50/texture = ExtResource( 1 )
+50/texture = ExtResource( 3 )
 50/tex_offset = Vector2( 0, 0 )
 50/modulate = Color( 1, 1, 1, 1 )
 50/region = Rect2( 960, 480, 96, 96 )
@@ -1286,7 +1286,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 50/z_index = 0
 51/name = "tileset x3.png 51"
-51/texture = ExtResource( 1 )
+51/texture = ExtResource( 3 )
 51/tex_offset = Vector2( 0, 0 )
 51/modulate = Color( 1, 1, 1, 1 )
 51/region = Rect2( 1152, 96, 96, 96 )
@@ -1307,7 +1307,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 51/z_index = 0
 52/name = "tileset x3.png 52"
-52/texture = ExtResource( 1 )
+52/texture = ExtResource( 3 )
 52/tex_offset = Vector2( 0, 0 )
 52/modulate = Color( 1, 1, 1, 1 )
 52/region = Rect2( 1152, 288, 96, 96 )
@@ -1328,7 +1328,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 52/z_index = 0
 53/name = "tileset x3.png 53"
-53/texture = ExtResource( 1 )
+53/texture = ExtResource( 3 )
 53/tex_offset = Vector2( 0, 0 )
 53/modulate = Color( 1, 1, 1, 1 )
 53/region = Rect2( 1272, 288, 96, 96 )
@@ -1349,7 +1349,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 53/z_index = 0
 54/name = "tileset x3.png 54"
-54/texture = ExtResource( 1 )
+54/texture = ExtResource( 3 )
 54/tex_offset = Vector2( 0, 0 )
 54/modulate = Color( 1, 1, 1, 1 )
 54/region = Rect2( 1344, 288, 96, 96 )
@@ -1370,7 +1370,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 54/z_index = 0
 55/name = "tileset x3.png 55"
-55/texture = ExtResource( 1 )
+55/texture = ExtResource( 3 )
 55/tex_offset = Vector2( 0, 0 )
 55/modulate = Color( 1, 1, 1, 1 )
 55/region = Rect2( 1344, 192, 96, 96 )
@@ -1391,7 +1391,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 55/z_index = 0
 56/name = "tileset x3.png 56"
-56/texture = ExtResource( 1 )
+56/texture = ExtResource( 3 )
 56/tex_offset = Vector2( 0, 0 )
 56/modulate = Color( 1, 1, 1, 1 )
 56/region = Rect2( 1344, 96, 96, 96 )
@@ -1412,7 +1412,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 56/z_index = 0
 57/name = "tileset x3.png 57"
-57/texture = ExtResource( 1 )
+57/texture = ExtResource( 3 )
 57/tex_offset = Vector2( 0, 0 )
 57/modulate = Color( 1, 1, 1, 1 )
 57/region = Rect2( 1272, 96, 96, 96 )
@@ -1433,7 +1433,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 57/z_index = 0
 58/name = "tileset x3.png 58"
-58/texture = ExtResource( 1 )
+58/texture = ExtResource( 3 )
 58/tex_offset = Vector2( 0, 0 )
 58/modulate = Color( 1, 1, 1, 1 )
 58/region = Rect2( 1344, 672, 96, 96 )
@@ -1454,7 +1454,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 58/z_index = 0
 59/name = "tileset x3.png 59"
-59/texture = ExtResource( 1 )
+59/texture = ExtResource( 3 )
 59/tex_offset = Vector2( 0, 0 )
 59/modulate = Color( 1, 1, 1, 1 )
 59/region = Rect2( 1344, 480, 96, 96 )
@@ -1475,7 +1475,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 59/z_index = 0
 60/name = "tileset x3.png 60"
-60/texture = ExtResource( 1 )
+60/texture = ExtResource( 3 )
 60/tex_offset = Vector2( 0, 0 )
 60/modulate = Color( 1, 1, 1, 1 )
 60/region = Rect2( 1224, 480, 96, 96 )
@@ -1496,7 +1496,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 60/z_index = 0
 61/name = "tileset x3.png 61"
-61/texture = ExtResource( 1 )
+61/texture = ExtResource( 3 )
 61/tex_offset = Vector2( 0, 0 )
 61/modulate = Color( 1, 1, 1, 1 )
 61/region = Rect2( 1152, 480, 96, 96 )
@@ -1517,7 +1517,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 61/z_index = 0
 62/name = "tileset x3.png 62"
-62/texture = ExtResource( 1 )
+62/texture = ExtResource( 3 )
 62/tex_offset = Vector2( 0, 0 )
 62/modulate = Color( 1, 1, 1, 1 )
 62/region = Rect2( 1152, 576, 96, 96 )
@@ -1538,7 +1538,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 62/z_index = 0
 63/name = "tileset x3.png 63"
-63/texture = ExtResource( 1 )
+63/texture = ExtResource( 3 )
 63/tex_offset = Vector2( 0, 0 )
 63/modulate = Color( 1, 1, 1, 1 )
 63/region = Rect2( 1152, 672, 96, 96 )
@@ -1559,7 +1559,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 63/z_index = 0
 64/name = "tileset x3.png 64"
-64/texture = ExtResource( 1 )
+64/texture = ExtResource( 3 )
 64/tex_offset = Vector2( 0, 0 )
 64/modulate = Color( 1, 1, 1, 1 )
 64/region = Rect2( 1224, 672, 96, 96 )
@@ -1580,7 +1580,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 64/z_index = 0
 65/name = "tileset x3.png 65"
-65/texture = ExtResource( 1 )
+65/texture = ExtResource( 3 )
 65/tex_offset = Vector2( 0, 0 )
 65/modulate = Color( 1, 1, 1, 1 )
 65/region = Rect2( 864, 768, 96, 96 )
@@ -1601,7 +1601,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 65/z_index = 0
 66/name = "tileset x3.png 66"
-66/texture = ExtResource( 1 )
+66/texture = ExtResource( 3 )
 66/tex_offset = Vector2( 0, 0 )
 66/modulate = Color( 1, 1, 1, 1 )
 66/region = Rect2( 672, 864, 96, 96 )
@@ -1622,7 +1622,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 66/z_index = 0
 67/name = "tileset x3.png 67"
-67/texture = ExtResource( 1 )
+67/texture = ExtResource( 3 )
 67/tex_offset = Vector2( 0, 0 )
 67/modulate = Color( 1, 1, 1, 1 )
 67/region = Rect2( 768, 864, 96, 96 )
@@ -1643,7 +1643,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 67/z_index = 0
 68/name = "tileset x3.png 68"
-68/texture = ExtResource( 1 )
+68/texture = ExtResource( 3 )
 68/tex_offset = Vector2( 0, 0 )
 68/modulate = Color( 1, 1, 1, 1 )
 68/region = Rect2( 672, 96, 96, 96 )
@@ -1664,7 +1664,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 68/z_index = 0
 69/name = "tileset x3.png 69"
-69/texture = ExtResource( 1 )
+69/texture = ExtResource( 3 )
 69/tex_offset = Vector2( 0, 0 )
 69/modulate = Color( 1, 1, 1, 1 )
 69/region = Rect2( 768, 96, 96, 96 )
@@ -1685,7 +1685,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 69/z_index = 0
 70/name = "tileset x3.png 70"
-70/texture = ExtResource( 1 )
+70/texture = ExtResource( 3 )
 70/tex_offset = Vector2( 0, 0 )
 70/modulate = Color( 1, 1, 1, 1 )
 70/region = Rect2( 864, 288, 96, 96 )
@@ -1706,7 +1706,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 } ]
 70/z_index = 0
 71/name = "tileset x3.png 71"
-71/texture = ExtResource( 1 )
+71/texture = ExtResource( 3 )
 71/tex_offset = Vector2( 0, 0 )
 71/modulate = Color( 1, 1, 1, 1 )
 71/region = Rect2( 864, 384, 96, 96 )
@@ -1729,7 +1729,7 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 0, 1461 )
-script = ExtResource( 2 )
+script = ExtResource( 1 )
 
 [node name="layer_floor" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -1750,4 +1750,4 @@ tile_data = PoolIntArray( 4, 25, 0, 5, 21, 0, 6, 21, 0, 7, 21, 0, 8, 21, 0, 9, 1
 
 [node name="NPC" parent="." instance=ExtResource( 4 )]
 position = Vector2( 458, 1215 )
-script = ExtResource( 5 )
+script = ExtResource( 2 )

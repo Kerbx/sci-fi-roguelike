@@ -25,7 +25,7 @@
 [ext_resource path="res://sprites/characters/player/playerRed/sprites/playerShoot/playerRed_shoot1.png" type="Texture" id=23]
 [ext_resource path="res://sprites/characters/player/playerRed/sprites/playerTalk/playerRed_talk2.png" type="Texture" id=24]
 [ext_resource path="res://sprites/characters/player/playerRed/sprites/playerDeath/playerRed_death4.png" type="Texture" id=25]
-[ext_resource path="res://Player/Player.gd" type="Script" id=26]
+[ext_resource path="res://scripts/Player.gd" type="Script" id=26]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -60,7 +60,7 @@ animations = [ {
 "speed": 7.0
 } ]
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" groups=["Persist"]]
 script = ExtResource( 26 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -70,6 +70,7 @@ current = true
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
 animation = "idle"
+frame = 1
 playing = true
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]

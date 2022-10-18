@@ -23,6 +23,9 @@ func _onButtonPressed():
 		file.open(settingsFile, File.WRITE)
 		var index = 1
 		file.store_line("playerColor = " + self.name + ".tscn")
+	elif("saveButton" in self.name):
+		var saving = load("res://scripts/saving.gd")
+		saving.saveGame()
 	else:
 		if(referencePath != ""):
 			get_tree().change_scene(referencePath)
