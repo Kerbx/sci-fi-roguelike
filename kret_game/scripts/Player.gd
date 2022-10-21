@@ -3,6 +3,7 @@ extends KinematicBody2D
 
 export (int) var speed = 500
 onready var animatedSprite = $AnimatedSprite
+onready var animationPlayer = $AnimationPlayer
 var velocity = Vector2()
 var direction
 
@@ -15,19 +16,24 @@ func getInput():
 		get_tree().change_scene("res://scenes/pause.tscn")
 	elif Input.is_action_pressed("playerMovementUp"):
 		velocity = Vector2.UP
-		animatedSprite.play("run")
+		animatedSprite.animation = "run"
+		animationPlayer.play("run")
 	elif Input.is_action_pressed("playerMovementDown"):
 		velocity = Vector2.DOWN
-		animatedSprite.play("run")
+		animatedSprite.animation = "run"
+		animationPlayer.play("run")
 	elif Input.is_action_pressed("playerMovementLeft"):
 		velocity = Vector2.LEFT
-		animatedSprite.play("run")
+		animatedSprite.animation = "run"
+		animationPlayer.play("run")
 	elif Input.is_action_pressed("playerMovementRight"):
 		velocity = Vector2.RIGHT
-		animatedSprite.play("run")
+		animatedSprite.animation = "run"
+		animationPlayer.play("run")
 	else:
 		velocity = Vector2.ZERO
-		animatedSprite.play("idle")
+		animatedSprite.animation = "idle"
+		animationPlayer.play("idle")
 	
 	velocity = velocity.normalized() * speed
 
