@@ -4,6 +4,7 @@ extends KinematicBody2D
 export (int) var speed = 500
 onready var animatedSprite = $AnimatedSprite
 onready var animationPlayer = $AnimationPlayer
+onready var stepSound = $Steps
 var velocity = Vector2()
 var direction
 
@@ -32,6 +33,7 @@ func getInput():
 		animationPlayer.play("run")
 	else:
 		velocity = Vector2.ZERO
+		stepSound.stop()
 		animatedSprite.animation = "idle"
 		animationPlayer.play("idle")
 	
