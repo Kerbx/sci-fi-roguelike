@@ -5,6 +5,7 @@ export (int) var speed = 500
 onready var animatedSprite = $AnimatedSprite
 onready var animationPlayer = $AnimationPlayer
 onready var stepSound = $Steps
+
 var velocity = Vector2()
 var direction
 
@@ -13,9 +14,7 @@ func _ready():
 	
 
 func getInput():
-	if Input.is_action_pressed("pauseGame"):
-		get_tree().change_scene("res://scenes/pause.tscn")
-	elif Input.is_action_pressed("playerMovementUp"):
+	if Input.is_action_pressed("playerMovementUp"):
 		velocity = Vector2.UP
 		animatedSprite.animation = "run"
 		animationPlayer.play("run")
