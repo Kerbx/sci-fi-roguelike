@@ -7,7 +7,6 @@ func getPlayerColor():
 	var file = File.new()
 	var playerColor
 	
-	print_debug(settingsFile)
 	file.open(settingsFile, File.READ)
 	
 	while not file.eof_reached():
@@ -16,7 +15,6 @@ func getPlayerColor():
 			line = line.split('=')
 			playerColor = line[1].strip_edges()
 	
-	print_debug(playerColor)
 	return playerColor
 
 func _ready():
